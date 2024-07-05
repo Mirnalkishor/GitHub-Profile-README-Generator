@@ -1,5 +1,6 @@
 function generateReadme() {
     const name = document.getElementById('name').value;
+    const Profile = document.getElementById('Profile').value;
     const currentlyWorking = document.getElementById('currentlyWorking').value;
     const projectName = document.getElementById('projectName').value;
     const projectLink = document.getElementById('projectLink').value;
@@ -18,17 +19,19 @@ function generateReadme() {
     const readmeContent = `
 # Hi 👋, I'm ${name}
 
+# ${Profile}
+
 ## Connect with me:
 <p>
-   <a href="${linkedin}" target="_blank"><img align="center" src="icons/linkedin.png" alt="LinkedIn" height="30" width="40" /></a>
-   <a href="${github}" target="_blank"><img align="center" src="icons/github.png" alt="GitHub" height="30" width="40" /></a>
-   <a href="${geeksforgeeks}" target="_blank"><img align="center" src="icons/geeksforgeeks.png" alt="GeeksforGeeks" height="30" width="40" /></a>
-   <a href="${hackerrank}" target="_blank"><img align="center" src="icons/hackerrank.png" alt="Hackerrank" height="30" width="40" /></a>
+   <a href="${linkedin}" target="_blank"><img align="center" src="https://github.com/Mirnalkishor/GitHub-Profile-README-Generator/blob/main/icons/linked-in.png" alt="LinkedIn" height="30" width="40" /></a>
+   <a href="${github}" target="_blank"><img align="center" src="https://github.com/Mirnalkishor/GitHub-Profile-README-Generator/blob/main/icons/github.png" alt="GitHub" height="30" width="40" /></a>
+   <a href="${geeksforgeeks}" target="_blank"><img align="center" src="https://github.com/Mirnalkishor/GitHub-Profile-README-Generator/blob/main/icons/geeks-for-geeks.png" alt="GeeksforGeeks" height="30" width="40" /></a>
+   <a href="${hackerrank}" target="_blank"><img align="center" src="https://github.com/Mirnalkishor/GitHub-Profile-README-Generator/blob/main/icons/hackerrank.png" alt="Hackerrank" height="30" width="40" /></a>
    <a href="${leetcode}" target="_blank"><img align="center" src="icons/leetcode.png" alt="LeetCode" height="30" width="40" /></a>
-   <a href="${instagram}" target="_blank"><img align="center" src="icons/instagram.png" alt="Instagram" height="30" width="40" /></a>
+   <a href="${instagram}" target="_blank"><img align="center" src="https://github.com/Mirnalkishor/GitHub-Profile-README-Generator/blob/main/icons/instagram.png" alt="Instagram" height="30" width="40" /></a>
 </p>
 
-## Talking about Personal Stuffs:
+## 🗣 Talking about Personal Stuffs:
 - 🔭 I’m currently working on: ${currentlyWorking}
 - 🏗 &nbsp; Building: ${built}
 - 🚀 &nbsp; I’m currently learning: ${currentlyLearning}
