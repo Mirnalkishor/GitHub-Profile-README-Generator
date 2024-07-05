@@ -37,6 +37,8 @@ ${Profile}
 - 👨🏻‍💻 &nbsp; Most of my projects are available on: [${projectName}](${projectLink})
 - 👨‍💻 &nbsp; Free time activities: ${freeTime}
 - 📫 &nbsp; How to reach me: ${contact}
+
+Thank you for reading, Share your ❤️ And follow me for update on some of my more amazing projects🌟 
 `;
 
     document.getElementById('generatedReadme').value = readmeContent.trim();
