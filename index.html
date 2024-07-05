@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile README Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900 flex flex-col items-center justify-center min-h-screen">
+    <div class="w-full max-w-7xl p-6 bg-white shadow-md rounded-lg">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold">GitHub Profile README Generator</h1>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="section">
+                <label for="name" class="block text-lg font-medium mb-2">Hi 👋, I'm</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div>
+                <label for="currentlyWorking" class="block text-lg font-medium mb-2">🔭 I’m currently working on:</label>
+                <input type="text" id="currentlyWorking" name="currentlyWorking" placeholder="What are you working on?" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="projectName" class="block text-lg font-medium mb-2">Project Name</label>
+                <input type="text" id="projectName" name="projectName" placeholder="Name of the Project" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="projectLink" class="block text-lg font-medium mb-2">Project Link</label>
+                <input type="text" id="projectLink" name="projectLink" placeholder="Link to the Project" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div>
+                <label for="linkedin" class="block text-lg font-medium mb-2">LinkedIn</label>
+                <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn URL" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="github" class="block text-lg font-medium mb-2">GitHub</label>
+                <input type="text" id="github" name="github" placeholder="GitHub URL" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="instagram" class="block text-lg font-medium mb-2">Instagram</label>
+                <input type="text" id="instagram" name="instagram" placeholder="Instagram URL" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div>
+                <label for="hackerrank" class="block text-lg font-medium mb-2">Hackerrank</label>
+                <input type="text" id="hackerrank" name="hackerrank" placeholder="Hackerrank URL" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="leetcode" class="block text-lg font-medium mb-2">Leetcode</label>
+                <input type="text" id="leetcode" name="leetcode" placeholder="Leetcode URL" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="geeksforgeeks" class="block text-lg font-medium mb-2">GeeksforGeeks</label>
+                <input type="text" id="geeksforgeeks" name="geeksforgeeks" placeholder="GeeksforGeeks URL" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+                <label for="currentlyLearning" class="block text-lg font-medium mb-2">🔭 I’m currently learning</label>
+                <input type="text" id="currentlyLearning" name="currentlyLearning" placeholder="Current Learning" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="projects" class="block text-lg font-medium mb-2">🛠 Most of my projects are available on</label>
+                <input type="text" id="projects" name="projects" placeholder="Projects Name and Link" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+                <label for="built" class="block text-lg font-medium mb-2">🧩 I have built</label>
+                <input type="text" id="built" name="built" placeholder="Projects Built" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="freeTime" class="block text-lg font-medium mb-2">🌱 I also like to spend my free time doing</label>
+                <input type="text" id="freeTime" name="freeTime" placeholder="Free Time Activities" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+        </div>
+        <div class="mb-6">
+            <label for="contact" class="block text-lg font-medium mb-2">📫 How to reach me</label>
+            <input type="text" id="contact" name="contact" placeholder="Contact Information" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+        </div>
+        <div class="mb-6">
+            <label for="favorites" class="block text-lg font-medium mb-2">My Absolute Favorites</label>
+            <textarea id="favorites" name="favorites" rows="4" placeholder="Your Favorite Activities" class="w-full border-gray-300 rounded-md shadow-sm p-2"></textarea>
+        </div>
+        <button type="button" onclick="generateReadme()" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 mb-6">Generate README</button>
+        <div class="readme-preview mb-6">
+            <h3 class="text-xl font-semibold mb-4">Generated README</h3>
+            <textarea id="generatedReadme" readonly class="w-full border-gray-300 rounded-md shadow-sm p-2 h-40"></textarea>
+            <button id="copyButton" onclick="copyReadme()" class="bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 mt-2">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
