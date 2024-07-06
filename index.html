@@ -9,20 +9,18 @@
 </head>
 
 <body class="bg-gray-200 text-gray-900 flex flex-col items-center justify-center min-h-screen">
-    <div class="w-full max-w-7xl p-6 bg-white shadow-md rounded-lg">
-        <header class="text-center mb-9">
-            <h1 class="text-4xl font-bold">GitHub Profile README Generator</h1>
-        </header>
+    <header class="text-center mb-9">
+        <h1 class="text-4xl font-bold">GitHub Profile README Generator</h1>
+    </header>
+    <form id="readmeForm" class="w-full max-w-4xl">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div class="section">
                 <label for="name" class="block text-lg font-medium mb-2">Hi 👋, I'm</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" class="w-full border-gray-300 rounded-md shadow-sm p-2">
             </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div class="section">
-                <label for="Profile" class="block text-lg font-medium mb-2">Profile</label>
-                <input type="text" id="Profile" name="Profile" placeholder="Add a bio" class="w-full border-gray-300 rounded-md shadow-sm p-2">
+                <label for="profile" class="block text-lg font-medium mb-2">Profile</label>
+                <input type="text" id="profile" name="profile" placeholder="Add a bio" class="w-full border-gray-300 rounded-md shadow-sm p-2">
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -92,13 +90,12 @@
             <input type="text" id="contact" name="contact" placeholder="Contact Information" class="w-full border-gray-300 rounded-md shadow-sm p-2">
         </div>
         <button type="button" onclick="generateReadme()" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 mb-6">Generate README</button>
-        <div class="readme-preview mb-6">
-            <h3 class="text-xl font-semibold mb-4">Generated README</h3>
-            <textarea id="generatedReadme" readonly class="w-full border-gray-300 rounded-md shadow-sm p-2 h-40"></textarea>
-            <button id="copyButton" onclick="copyReadme()" class="bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 mt-2">Copy to Clipboard</button>
-        </div>
+    </form>
+    <div class="readme-preview mb-6 w-full max-w-4xl">
+        <h3 class="text-xl font-semibold mb-4">Generated README</h3>
+        <textarea id="generatedReadme" readonly class="w-full border-gray-300 rounded-md shadow-sm p-2 h-40"></textarea>
+        <button id="copyButton" onclick="copyReadme()" class="bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 mt-2">Copy to Clipboard</button>
     </div>
     <script src="script.js"></script>
-</body>
-
-</html>
+    </body>
+    </html>
