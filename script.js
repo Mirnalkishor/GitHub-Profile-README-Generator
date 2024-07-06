@@ -31,7 +31,7 @@ ${profile}
 <a href="${instagram}" target="_blank"><img align="center" src="https://github.com/Mirnalkishor/GitHub-Profile-README-Generator/blob/main/icons/instagram.png" alt="Instagram" height="30" width="40" /></a>
 </p>
 
-## 🗣 Talking about Personal Stuffs:  <img align=right src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" alt="About Me GIF" width="180px"><br/>
+## 🗣 Talking about Personal Stuffs:  <img align=right src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" alt="About Me GIF" width="250px"><br/>
 - 🔭 I’m currently working on: ${currentlyWorking}
 - 🏗 &nbsp; Building: ${built}
 - 🚀 &nbsp; I’m currently learning: ${currentlyLearning}
